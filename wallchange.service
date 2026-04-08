@@ -1,0 +1,7 @@
+[Unit]
+Description=Update the desktop background with the latest image from unsplash
+
+[Service]
+Type=simple
+WorkingDirectory=%h/.local/share/wallchange
+ExecStart=%h/.local/share/wallchange/wallchange.sh

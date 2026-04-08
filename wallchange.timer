@@ -1,0 +1,11 @@
+[Unit]
+Description=Periodically update the desktop background
+
+[Timer]
+Persistent=false
+OnStartupSec=15min
+OnUnitActiveSec=4h
+Unit=wallchange.service
+
+[Install]
+WantedBy=timers.target
